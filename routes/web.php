@@ -25,6 +25,10 @@ Route::get('/crud', function () {
     return view('users.index');
 })->name('crud');
 
+Route::get('/dynamicInput', function () {
+    return view('dynamicInput.index');
+})->name('dyInput');
+
 Route::get('article/{name}', Article::class)->name('article');
 
 // Route::get('/crud/{id}', [UserController::class, 'edit'])->name('edit');
